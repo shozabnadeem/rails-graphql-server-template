@@ -2,6 +2,9 @@
 
 rails graphql server template as guessing from is a template where anyone can start working on server with out configuration . also there is an example of Project , Client to make an basic understanding 
 
+## Gist Url 
+> https://gist.github.com/shozabnadeem/d74e6f0348b1b6e9c2451b4b319c3c19
+
 ## File convention explaination
  - All graphql related files are stored in graphql folder.  
  - Queries , Mutation, Types have their own modules  
