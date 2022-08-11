@@ -4,8 +4,8 @@ module Queries
     type Types::ClientType, null: false
     argument :id, ID, required: true
 
-    def resolve(id)
-      Client.find(id)
+    def resolve(params)
+      Client.find(params[:id])
       rescue ActiveRecord::RecordNotFound => _e
         GraphQL::ExecutionError.new('Client does not exist.')
       rescue ActiveRecord::RecordInvalid => e
